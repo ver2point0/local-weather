@@ -15,14 +15,37 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Your Current Weather</h1>
-    <h2>City, Country</h2>
-    <h3>Current Temperature</h3>
-    <p>0&deg;F</p>
-    <p>0&deg;C</p>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/local-weather.js"></script>
+    <div class="container">
+      <div class="row">
+        <div class="col-m-12 text-center">
+          <div class="jumbotron">
+            <h2 id="location"></h2>
+            <div class="row-data">
+              <div id="temp" class="col-xs-4 col-xs-offset-2">
+              </div>
+              <div class="col-xs-4">
+                <h3 id="weather"></h3>
+                <h5 id="description"></h5>
+              </div>
+            </div>
+            <button class="btn btn-success" id="unit-change">
+              Change Temp Units
+            </button>
+            <h1>Your Current Weather</h1>
+            <h2>City, Country</h2>
+            <h3>Current Temperature</h3>
+            <p>0&deg;F</p>
+            <p>0&deg;C</p>
+          </div>
+          <div class="credit">
+          Made by <a href="https://www.freecodecamp.com/ver2point0" 
+          target="_blank">John McIntosh II</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/local-weather.js"></script>
   </body>
 </html>
