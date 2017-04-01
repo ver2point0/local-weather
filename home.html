@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Local Weather</title>
+    <title>Your Local Weather</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/local-weather.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -17,35 +17,26 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-m-12 text-center">
+        <div class="col-xs-6 col-xs-offset-3 text-center">
           <div class="jumbotron">
             <h2 id="location"></h2>
-            <div class="row-data">
-              <div id="temp" class="col-xs-4 col-xs-offset-2">
+            <div class="row temperature-data">
+              <div class="col-xs-6 col-xs-offset-3" id="temperature">
               </div>
-              <div class="col-xs-4">
+              <div class="col-xs-4 col-xs-offset-4">
                 <h3 id="weather"></h3>
-                <h5 id="description"></h5>
+                <h4 id="status"></h4>
               </div>
             </div>
-            <button class="btn btn-success" id="unit-change">
-              Change Temp Units
+            <button class="btn btn-success" id="units">
+              &deg;F or &deg;C
             </button>
-            <h1>Your Current Weather</h1>
-            <h2>City, Country</h2>
-            <h3>Current Temperature</h3>
-            <p>0&deg;F</p>
-            <p>0&deg;C</p>
-          </div>
-          <div class="credit">
-          Made by <a href="https://www.freecodecamp.com/ver2point0" 
-          target="_blank">John McIntosh II</a>
           </div>
         </div>
       </div>
     </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/local-weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/local-weather.js"></script>
   </body>
 </html>
