@@ -1,2 +1,2 @@
-# local-weather
+# Local Weather
 FCC intermediate project
